@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-footer);
+    gap: 6rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.heading h1 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    max-width: 850px;
+}
+
+.heading button {
+    border: none;
+    background: transparent;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 1.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 0.3;
+}
+
+.links__logo p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    max-width: 200px;
+}
+
+.links__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.links__links h4 {
+    margin-bottom: 1srem;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.links__links p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.end {
+    text-align: center;
+}
+
+.end p {
+
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'liga' off;
+
+    color: #FFFFFF;
+}
+
+@media screen and (max-width : 1000px) {
+    .heading h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .heading button {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .heading button {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .heading {
+        gap: 2rem;
+    }
+
+    .footer {
+        gap: 4rem;
+    }
+}

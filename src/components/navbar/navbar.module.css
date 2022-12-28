@@ -1,0 +1,137 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 2.5rem 7.5rem;
+    align-items: center;
+}
+
+.navbar__elements {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo img {
+    width: 62.56px;
+    height: 16.02px;
+    margin-right: 2rem;
+}
+
+.navbar__links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.52rem;
+}
+
+.navbar__buttons button,
+.menu__container__buttons button {
+    outline: none;
+    border: none;
+    padding: 1rem 3rem;
+    background: #FF4820;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.navbar__buttons p,
+.navbar__links p,
+.menu__container__buttons p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    width: fit-content;
+    width: 27px;
+    height: 27px;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--color-footer);
+    border-radius: 10px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.menu__container__buttons {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.menu__container__buttons button {
+    padding: 0.5rem 2rem;
+}
+
+@media screen and (max-width : 1210px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__buttons {
+        flex: 1;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__buttons {
+        display: none;
+    }
+
+    .menu__container__buttons {
+        display: block;
+    }
+
+    .menu {
+        padding: 0 0 0 0;
+    }
+
+    .navbar {
+        padding: 2.5rem 4rem;
+    }
+}
